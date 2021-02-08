@@ -1,0 +1,31 @@
+{
+  "name": "innominado",
+  "version": "1.0.0",
+  "description": "Authentication/Authorization ",
+  "main": "Backend/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drop-G/innominado.git"
+  },
+  "keywords": [
+    "Super",
+    "User"
+  ],
+  "author": "Ted Peters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drop-G/innominado/issues"
+  },
+  "homepage": "https://github.com/Drop-G/innominado#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.15"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
