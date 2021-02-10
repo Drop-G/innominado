@@ -1,0 +1,13 @@
+﻿{
+    "connectionString": "mongodb://localhost/innominado",
+    "secret": "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING",
+    "emailFrom": "larry16@ethereal.email",
+    "smtpOptions": {
+        "host": "smtp.ethereal.email",
+        "port": 587,
+        "auth": {
+            "user": "larry16@ethereal.email",
+            "pass": "SQUpKbZWNx9ZdN6Xwp"
+        }
+    }
+}

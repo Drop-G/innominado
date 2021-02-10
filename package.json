@@ -2,10 +2,14 @@
   "name": "innominado",
   "version": "1.0.0",
   "description": "Authentication/Authorization ",
-  "main": "Backend/server.js",
+  "main": "backend/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "test": "cd client && npm test",
+    "start:prod": "cd backend && node server.js ",
+    "start:dev": "concurrently -k \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "server": "cd backend && nodemon server.js",
+    "client": "cd client && npm start"
   },
   "repository": {
     "type": "git",
@@ -22,11 +26,26 @@
   },
   "homepage": "https://github.com/Drop-G/innominado#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "create-react-app": "^4.0.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.11.15"
+    "express-jwt": "^6.0.0",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongo-express": "^1.0.0-alpha.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.15",
+    "nodemailer": "^6.4.17",
+    "rootpath": "^0.1.2",
+    "swagger-ui-express": "^4.1.6",
+    "yamljs": "^0.3.0"
   },
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "nodemon": "^2.0.7"
   }
 }
