@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const crypto = require("crypto");
 const sendEmail = require('../_helpers/send-email');
-const db = require('../_helpers/db');
+const db = require('../backend/server.js');
 const Role = require('../_helpers/role');
 
 module.exports = {
