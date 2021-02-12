@@ -8,7 +8,11 @@
     "test": "cd client && npm test",
     "start:prod": "cd backend && node server.js ",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "start:dev": "nodemon server",
+=======
+    "start:dev": "npm run server",
+>>>>>>> d827d4d3d250fb1fdb964089c536d0db62126865
 =======
     "start:dev": "npm run server",
 >>>>>>> d827d4d3d250fb1fdb964089c536d0db62126865
