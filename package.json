@@ -7,7 +7,11 @@
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "test": "cd client && npm test",
     "start:prod": "cd backend && node server.js ",
+<<<<<<< HEAD
     "start:dev": "nodemon server",
+=======
+    "start:dev": "npm run server",
+>>>>>>> d827d4d3d250fb1fdb964089c536d0db62126865
     "server": "cd backend && nodemon server.js",
     "client": "cd client && npm start"
   },
